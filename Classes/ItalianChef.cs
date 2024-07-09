@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C__Console_App
+namespace C__Console_App.Classes
 {
     internal class ItalianChef:Chef // ItalianChef inherits functionality from the Chef class. Basically just class x extends y.
     {

@@ -43,16 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="Chef.cs" />
-    <Compile Include="ItalianChef.cs" />
-    <Compile Include="Movie.cs" />
+    <Compile Include="Classes/Book.cs" />
+    <Compile Include="Classes/Chef.cs" />
+    <Compile Include="Classes/ItalianChef.cs" />
+    <Compile Include="Classes/Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rating.cs" />
-    <Compile Include="Song.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Utility.cs" />
+    <Compile Include="Classes/Rating.cs" />
+    <Compile Include="Classes/Song.cs" />
+    <Compile Include="Classes/Student.cs" />
+    <Compile Include="Classes/Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

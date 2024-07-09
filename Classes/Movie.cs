@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C__Console_App
+namespace C__Console_App.Classes
 {
     internal class Movie
     {
