@@ -1,8 +1,8 @@
-﻿using C__Console_App.Classes;
+﻿using CSharpConsoleApp.Classes;
 using System;
 using System.Linq;
 
-namespace App
+namespace CSharpConsoleApp
 {
   internal class Program
   {

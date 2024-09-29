@@ -1,4 +1,4 @@
-﻿namespace C__Console_App.Classes
+﻿namespace CSharpConsoleApp.Classes
 {
     internal class Rating
     {

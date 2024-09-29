@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C__Console_App.Classes
+namespace CSharpConsoleApp.Classes
 {
     // The 'static' keyword makes it so you can't create instances of it. (the program will error)
     internal static class Utility
