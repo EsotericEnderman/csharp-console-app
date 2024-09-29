@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CSharpConsoleApp.Classes
 {
@@ -14,7 +14,7 @@ namespace CSharpConsoleApp.Classes
             Console.WriteLine("The chef made some salad!");
         }
 
-        // The virtual keyword allows the class method to be overriden.
+        // The virtual keyword allows the class method to be overridden.
         public virtual void MakeSecretMeal()
         {
             Console.WriteLine("The chef made a secret meal...");
