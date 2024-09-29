@@ -465,30 +465,28 @@ namespace CSharpConsoleApp
       Console.WriteLine();
 
       Rating movie1Rating = new Rating(4.6, 7203);
-      Movie movie1 = new Movie("The Avengers", "Joss Whedon", movie1Rating, "PG-13");
+      Movie movie1 = new Movie("The Avengers", "Joss Whedon", movie1Rating, MovieAgeRating.PG_13);
 
       // movie1.AgeRating = "a"; will error.
 
       Console.WriteLine(movie1);
 
       Rating movie2Rating = new Rating(4.4, 8905);
-      Movie movie2 = new Movie("Shrek", "Adam Adamson", movie2Rating, "PG");
+      Movie movie2 = new Movie("Shrek", "Adam Adamson", movie2Rating, MovieAgeRating.PG);
 
       Console.WriteLine(movie2);
 
       Console.WriteLine();
 
-      Console.WriteLine(Song.songCount); // You can't use "Song.title" because it belongs to instances of the class, not the class itself.
+      Console.WriteLine(Song.SongCount); // You can't use "Song.title" because it belongs to instances of the class, not the class itself.
 
-      Song holiday = new Song("Holiday", "Green Day", 200);
-      Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+      Song holiday = new Song("Holiday", ["Green Day"], 200);
+      Song kashmir = new Song("Kashmir", ["Led Zeppelin"], 150);
 
       Console.WriteLine(holiday.title);
       Console.WriteLine(kashmir.title); // Can't do "Kasmir.songCount".
 
-      Console.WriteLine(kashmir.GetSongCount());
-
-      Console.WriteLine(Song.songCount);
+      Console.WriteLine(Song.SongCount);
 
       Console.WriteLine();
 
@@ -539,14 +537,14 @@ namespace CSharpConsoleApp
       Console.WriteLine(slimeBotDocs);
       Console.WriteLine(slimeBotDocs.title);
       Console.WriteLine(slimeBotDocs.authorName);
-      Console.WriteLine(slimeBotDocs.pageNumber);
+      Console.WriteLine(slimeBotDocs.pageCount);
       Console.WriteLine(slimeBotDocs.genre);
 
       Book tssHistory = new Book("The History of The Slimy Swamp, I guess", "Slqmy", 6030, "The Slimy Swamp");
       Console.WriteLine(tssHistory);
       Console.WriteLine(tssHistory.title);
       Console.WriteLine(tssHistory.authorName);
-      Console.WriteLine(tssHistory.pageNumber);
+      Console.WriteLine(tssHistory.pageCount);
       Console.WriteLine(tssHistory.genre);
 
       Console.WriteLine();

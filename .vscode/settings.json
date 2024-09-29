@@ -1,3 +1,13 @@
 {
-    "dotnet.preferCSharpExtension": true
+    "dotnet.preferCSharpExtension": true,
+    "cSpell.words": [
+        "Adamson",
+        "colour",
+        "Exponentiate",
+        "italian",
+        "kashmir",
+        "Kasmir",
+        "roly",
+        "Whedon"
+    ]
 }
