@@ -36,26 +36,18 @@ namespace CSharpConsoleApp
     /// <exception cref="ArgumentOutOfRangeException"></exception>
     static string GetDayOfTheWeek(int dayNumberZeroIndex)
     {
-      switch (dayNumberZeroIndex)
-      {
-        case 0:
-          return "Monday";
-        case 1:
-          return "Tuesday";
-        case 2:
-          return "Wednesday";
-        case 3:
-          return "Thursday";
-        case 4:
-          return "Friday";
-        case 5:
-          return "Saturday";
-        case 6:
-          return "Sunday";
-        default:
-          throw new ArgumentOutOfRangeException("Invalid day of the week. Day of the week must be an int from 0-6. Received " + dayNumberZeroIndex + " instead." + " " + dayNumberZeroIndex + " " + (dayNumberZeroIndex > 6 ? "> 6" : "< 0"));
-      }
-    }
+            return dayNumberZeroIndex switch
+            {
+                0 => "Monday",
+                1 => "Tuesday",
+                2 => "Wednesday",
+                3 => "Thursday",
+                4 => "Friday",
+                5 => "Saturday",
+                6 => "Sunday",
+                _ => throw new ArgumentOutOfRangeException("Invalid day of the week. Day of the week must be an int from 0-6. Received " + dayNumberZeroIndex + " instead." + " " + dayNumberZeroIndex + " " + (dayNumberZeroIndex > 6 ? "> 6" : "< 0")),
+            };
+        }
 
     static decimal Exponentiate(decimal baseNumber, int exponentNumber)
     {
