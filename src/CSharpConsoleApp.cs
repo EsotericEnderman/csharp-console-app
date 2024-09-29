@@ -1,4 +1,4 @@
-﻿using CSharpConsoleApp.Classes;
+using CSharpConsoleApp.Classes;
 
 #pragma warning disable IDE0130 // Namespace does not match folder structure
 namespace CSharpConsoleApp
@@ -76,9 +76,9 @@ namespace CSharpConsoleApp
       // Console.WriteLine only takes one argument.
       Console.WriteLine("Hello world!");
 
-      Console.WriteLine(" /|");
-      Console.WriteLine("/ |");
-      Console.WriteLine(" /|");
+      Console.WriteLine("   /|");
+      Console.WriteLine("  / |");
+      Console.WriteLine(" /  |");
       Console.WriteLine("/___|");
 
 
@@ -86,10 +86,9 @@ namespace CSharpConsoleApp
 
       // The order matters.
       Console.WriteLine("/___|");
-      Console.WriteLine(" /|");
-      Console.WriteLine("/ |");
-      Console.WriteLine(" /|");
-
+      Console.WriteLine("   /|");
+      Console.WriteLine(" /  |");
+      Console.WriteLine("   /|");
 
       Console.WriteLine();
 
