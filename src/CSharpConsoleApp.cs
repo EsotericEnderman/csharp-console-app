@@ -558,7 +558,7 @@ namespace CSharpConsoleApp
       while (guess != secretWord && guessesLeft > 0)
       {
         Console.Write("Enter your guess " + "(" + guessesLeft + " guesses remaining" + "): ");
-        guess = Console.ReadLine();
+        guess = Console.ReadLine() ?? "";
         guessesLeft--;
       }
 
@@ -570,7 +570,7 @@ namespace CSharpConsoleApp
       do
       {
         Console.Write("Enter your guess " + "(" + guessesLeft + " guesses remaining" + "): ");
-        guess = Console.ReadLine();
+        guess = Console.ReadLine() ?? "";
         guessesLeft--;
       }
       while (guess != secretWord2 && guessesLeft > 0);
@@ -585,7 +585,7 @@ namespace CSharpConsoleApp
       Console.WriteLine();
 
       Console.Write("Enter an operator (+, -, /, *): ");
-      string operatorInput = Console.ReadLine();
+      string operatorInput = Console.ReadLine() ?? "";
 
       Console.WriteLine();
 
@@ -616,13 +616,13 @@ namespace CSharpConsoleApp
       Console.WriteLine();
 
       Console.Write("Enter a colour: ");
-      string colour = Console.ReadLine();
+      string colour = Console.ReadLine() ?? "";
 
       Console.Write("Enter a plural noun: ");
-      string pluralNoun = Console.ReadLine();
+      string pluralNoun = Console.ReadLine() ?? "";
 
       Console.Write("Enter a celebrity's name: ");
-      string celebrityName = Console.ReadLine();
+      string celebrityName = Console.ReadLine() ?? "";
 
       Console.WriteLine("Roses are " + colour.ToLower());
       Console.WriteLine(pluralNoun[0].ToString().ToUpper() + pluralNoun.Substring(1).ToLower() + " are blue");
@@ -659,11 +659,11 @@ namespace CSharpConsoleApp
       Console.Write("Enter your name: ");
 
       // Waits for input from user. Doesn't close the tab straight away.
-      string userName = Console.ReadLine();
+      string userName = Console.ReadLine() ?? "";
 
       Console.Write("Enter your age: ");
 
-      string userAge = Console.ReadLine();
+      string userAge = Console.ReadLine() ?? "";
 
       Console.WriteLine("You entered: " + userName + " and " + userAge);
 
