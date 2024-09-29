@@ -51,7 +51,7 @@ namespace CSharpConsoleApp
 
     static decimal Exponentiate(decimal baseNumber, int exponentNumber)
     {
-      if (baseNumber == 0) throw new InvalidOperationException("0 ^ 0 is undefined.");
+      if (baseNumber == 0 && exponentNumber == 0) throw new InvalidOperationException("0 ^ 0 is undefined.");
 
       decimal product = 1;
 
