@@ -63,7 +63,7 @@ namespace CSharpConsoleApp
       return exponentNumber < 0 ? 1 / product : product;
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
       // Console.WriteLine only takes one argument.
       Console.WriteLine("Hello world!");
