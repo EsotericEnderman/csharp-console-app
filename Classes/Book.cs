@@ -1,24 +1,22 @@
-﻿using System;
-
-namespace CSharpConsoleApp.Classes
+﻿namespace CSharpConsoleApp.Classes
 {
+
     internal class Book
     {
+
         public string title;
         public string authorName;
-
         public string genre;
+        public int pageCount;
 
-        public int pageNumber;
-
-        public Book(string title, string authorName, int pageNumber, string genre = "Not Specified")
+        public Book(string title, string authorName, int pageCount, string genre = "Not specified")
         {
             Console.WriteLine("Creating new book! " + title);
 
             this.title = title;
             this.authorName = authorName;
             this.genre = genre;
-            this.pageNumber = pageNumber;
+            this.pageCount = pageCount;
         }
     }
 }

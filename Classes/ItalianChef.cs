@@ -1,9 +1,9 @@
-﻿using System;
-
-namespace CSharpConsoleApp.Classes
+﻿namespace CSharpConsoleApp.Classes
 {
+
     internal class ItalianChef : Chef // ItalianChef inherits functionality from the Chef class. Basically just class x extends y.
     {
+
         public void MakePizza()
         {
             Console.WriteLine("The chef made some pizza!");
@@ -11,7 +11,7 @@ namespace CSharpConsoleApp.Classes
 
         public void MakeSpaghettiBolognese()
         {
-            Console.WriteLine("The chef made some spaghetti bolognese!");
+            Console.WriteLine("The chef made some spaghetti Bolognese!");
         }
 
         public void MakePasta()

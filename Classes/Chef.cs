@@ -1,9 +1,9 @@
-using System;
-
-namespace CSharpConsoleApp.Classes
+﻿namespace CSharpConsoleApp.Classes
 {
+
     internal class Chef
     {
+
         public void MakeChicken()
         {
             Console.WriteLine("The chef made some chicken!");

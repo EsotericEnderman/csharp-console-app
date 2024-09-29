@@ -1,36 +1,21 @@
-﻿using System;
-
-namespace CSharpConsoleApp.Classes
+﻿namespace CSharpConsoleApp.Classes
 {
-    internal class Movie
+
+    internal class Movie(string title, string director, Rating rating, MovieAgeRating ageRating)
     {
-        public string title;
-        public string director;
-        public Rating rating;
-        private string ageRating; // Set property to private when using getters and setters.
 
-        public Movie(string title, string director, Rating rating, string ageRating)
-        {
-            this.title = title;
-            this.director = director;
-            this.rating = rating;
+        public string title = title;
+        public string director = director;
+        public Rating rating = rating;
+        public MovieAgeRating ageRating = ageRating;
+    }
 
-            AgeRating = ageRating;
-        }
-
-        public string AgeRating
-        {
-            get { return ageRating; }
-            // Value is the value that the user has set the property to.
-            set
-            {
-                if (value != "G" && value != "PG" && value != "PG-13" && value != "R" && value != "NR")
-                {
-                    throw new ArgumentException("Invalid age rating, must be one of the following: 'G', 'PG', 'PG-13', 'R' or 'NR'.");
-                }
-
-                ageRating = value;
-            }
-        }
+    internal enum MovieAgeRating
+    {
+        G,
+        PG,
+        PG_13,
+        R,
+        NR
     }
 }

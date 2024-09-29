@@ -1,22 +1,16 @@
 ﻿namespace CSharpConsoleApp.Classes
 {
-    internal class Student
+
+    internal class Student(string name, string major, double gpa)
     {
-        public string name;
-        public string major;
 
-        public double GPA;
-
-        public Student(string name_, string major_, double GPA_)
-        {
-            name = name_;
-            major = major_;
-            GPA = GPA_;
-        }
+        public string name = name;
+        public string major = major;
+        public double gpa = gpa;
 
         public bool HasHonours()
         {
-            return GPA > 3.5;
+            return gpa > 3.5D;
         }
     }
 }
