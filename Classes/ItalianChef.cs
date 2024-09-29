@@ -2,7 +2,7 @@
 
 namespace CSharpConsoleApp.Classes
 {
-    internal class ItalianChef:Chef // ItalianChef inherits functionality from the Chef class. Basically just class x extends y.
+    internal class ItalianChef : Chef // ItalianChef inherits functionality from the Chef class. Basically just class x extends y.
     {
         public void MakePizza()
         {

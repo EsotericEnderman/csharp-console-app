@@ -14,7 +14,7 @@ namespace CSharpConsoleApp.Classes
             this.title = title;
             this.director = director;
             this.rating = rating;
-            
+
             AgeRating = ageRating;
         }
 
@@ -22,7 +22,8 @@ namespace CSharpConsoleApp.Classes
         {
             get { return ageRating; }
             // Value is the value that the user has set the property to.
-            set {
+            set
+            {
                 if (value != "G" && value != "PG" && value != "PG-13" && value != "R" && value != "NR")
                 {
                     throw new ArgumentException("Invalid age rating, must be one of the following: 'G', 'PG', 'PG-13', 'R' or 'NR'.");

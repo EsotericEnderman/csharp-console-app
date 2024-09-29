@@ -13,7 +13,7 @@
             major = major_;
             GPA = GPA_;
         }
-        
+
         public bool HasHonours()
         {
             return GPA > 3.5;

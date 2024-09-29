@@ -8,7 +8,8 @@
 
         public static int songCount; // = 0
 
-        public Song(string title, string artists, int durationSeconds) {
+        public Song(string title, string artists, int durationSeconds)
+        {
             this.title = title;
             this.artists = artists;
             this.durationSeconds = durationSeconds;

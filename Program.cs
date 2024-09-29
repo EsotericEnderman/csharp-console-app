@@ -50,7 +50,7 @@ namespace CSharpConsoleApp
         case 6:
           return "Sunday";
         default:
-          throw new ArgumentOutOfRangeException("Invalid day of the week. Day of the week must be an int from 0-6. Received " + dayNumberZeroIndex + " instead." + " " + dayNumberZeroIndex+ " " + (dayNumberZeroIndex > 6 ? "> 6" : "< 0"));
+          throw new ArgumentOutOfRangeException("Invalid day of the week. Day of the week must be an int from 0-6. Received " + dayNumberZeroIndex + " instead." + " " + dayNumberZeroIndex + " " + (dayNumberZeroIndex > 6 ? "> 6" : "< 0"));
       }
     }
 
@@ -59,16 +59,16 @@ namespace CSharpConsoleApp
       if (baseNumber == 0) throw new InvalidOperationException("0 ^ 0 is undefined.");
 
       decimal product = 1;
-        
+
       for (int i = 1; i <= Math.Abs(exponentNumber); i++)
       {
         product *= baseNumber;
       }
 
-      return exponentNumber < 0 ? 1 / product : product;   
-     }
+      return exponentNumber < 0 ? 1 / product : product;
+    }
 
-     static void Main(string[] args)
+    static void Main(string[] args)
     {
       // Console.WriteLine only takes one argument.
       Console.WriteLine("Hello world!");
@@ -435,7 +435,7 @@ namespace CSharpConsoleApp
 
       Console.WriteLine();
 
-      int[,] numberGrid = 
+      int[,] numberGrid =
             {
                 { 0, 0, },
                 { 1, 1, },
@@ -479,7 +479,7 @@ namespace CSharpConsoleApp
       Console.WriteLine();
 
       Console.WriteLine(Song.songCount); // You can't use "Song.title" because it belongs to instances of the class, not the class itself.
-      
+
       Song holiday = new Song("Holiday", "Green Day", 200);
       Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
 
@@ -512,24 +512,26 @@ namespace CSharpConsoleApp
 
       Console.WriteLine();
 
-      try {
+      try
+      {
         Console.Write("Enter a number: ");
         decimal inputNum1 = Convert.ToDecimal(Console.ReadLine());
         Console.Write("Enter a number: ");
         decimal inputNum2 = Convert.ToDecimal(Console.ReadLine());
 
         Console.WriteLine(inputNum1 / inputNum2);
-     }
-     catch (Exception exception) { // Catches all exceptions, use specific exception types to catch specific exceptions. E.g., DivideByZeroException.
+      }
+      catch (Exception exception)
+      { // Catches all exceptions, use specific exception types to catch specific exceptions. E.g., DivideByZeroException.
         Console.Write(exception.ToString());
-     } // Add more catches on top of the block, to catch more specific exceptions.
-     finally
-     {
+      } // Add more catches on top of the block, to catch more specific exceptions.
+      finally
+      {
         Console.WriteLine("This will always be executed! Even if the 'try' block above fails.");
         // Code that will always get executed.
         // Wait this is actually really useful...
         // Like in Slime Bot you can have a try catch to do something when joining the server, and also code to store the server in the database, in a finally block.
-     }
+      }
 
       Console.WriteLine();
 
@@ -556,9 +558,9 @@ namespace CSharpConsoleApp
 
       while (guess != secretWord && guessesLeft > 0)
       {
-         Console.Write("Enter your guess " + "(" + guessesLeft + " guesses remaining" + "): ");
-         guess = Console.ReadLine();
-         guessesLeft--;
+        Console.Write("Enter your guess " + "(" + guessesLeft + " guesses remaining" + "): ");
+        guess = Console.ReadLine();
+        guessesLeft--;
       }
 
       if (guessesLeft != 0) Console.WriteLine("GG!"); else Console.WriteLine("L");
