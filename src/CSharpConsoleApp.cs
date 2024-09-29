@@ -36,18 +36,18 @@ namespace CSharpConsoleApp
     /// <exception cref="ArgumentOutOfRangeException"></exception>
     static string GetDayOfTheWeek(int dayNumberZeroIndex)
     {
-            return dayNumberZeroIndex switch
-            {
-                0 => "Monday",
-                1 => "Tuesday",
-                2 => "Wednesday",
-                3 => "Thursday",
-                4 => "Friday",
-                5 => "Saturday",
-                6 => "Sunday",
-                _ => throw new ArgumentOutOfRangeException("Invalid day of the week. Day of the week must be an int from 0-6. Received " + dayNumberZeroIndex + " instead." + " " + dayNumberZeroIndex + " " + (dayNumberZeroIndex > 6 ? "> 6" : "< 0")),
-            };
-        }
+      return dayNumberZeroIndex switch
+      {
+        0 => "Monday",
+        1 => "Tuesday",
+        2 => "Wednesday",
+        3 => "Thursday",
+        4 => "Friday",
+        5 => "Saturday",
+        6 => "Sunday",
+        _ => throw new ArgumentOutOfRangeException("Invalid day of the week. Day of the week must be an int from 0-6. Received " + dayNumberZeroIndex + " instead." + " " + dayNumberZeroIndex + " " + (dayNumberZeroIndex > 6 ? "> 6" : "< 0")),
+      };
+    }
 
     static decimal Exponentiate(decimal baseNumber, int exponentNumber)
     {
@@ -326,7 +326,9 @@ namespace CSharpConsoleApp
 
       string[] friends = new string[2];
       friends[0] = "rolyPolyVole";
+#pragma warning disable CA1806 // Do not ignore method results
       friends.Append("Crafty_Crafter2");
+#pragma warning restore CA1806 // Do not ignore method results
       Console.WriteLine(friends.Length); // 2.
 
       // Update an element of an array.
