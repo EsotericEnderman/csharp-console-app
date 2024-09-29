@@ -1,6 +1,4 @@
 ﻿using CSharpConsoleApp.Classes;
-using System;
-using System.Linq;
 
 namespace CSharpConsoleApp
 {
