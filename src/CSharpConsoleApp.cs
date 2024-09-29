@@ -322,7 +322,7 @@ namespace CSharpConsoleApp
       Console.WriteLine(numbers);
 
       // 0, 1, 2,3,4,
-      int[] luckyNumbers = { 1, 3, 8, 11, 13, 16, 23, 42, 44 };
+      int[] luckyNumbers = [1, 3, 8, 11, 13, 16, 23, 42, 44];
 
       string[] friends = new string[2];
       friends[0] = "rolyPolyVole";
