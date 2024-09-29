@@ -2,7 +2,7 @@
 
 namespace CSharpConsoleApp
 {
-  internal class Program
+  internal class CSharpConsoleApp
   {
 
     // Can also be at the bottom.
