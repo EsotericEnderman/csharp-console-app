@@ -2,6 +2,7 @@
 
 namespace CSharpConsoleApp
 {
+
   internal class CSharpConsoleApp
   {
 
