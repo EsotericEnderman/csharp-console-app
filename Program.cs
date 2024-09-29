@@ -342,8 +342,8 @@ namespace CSharpConsoleApp
 
       Console.WriteLine();
 
-      SayHi("Slqmy", 15);
-      SayHi("Slqmy");
+      SayHi("Esoteric Enderman", 15);
+      SayHi("Esoteric Enderman");
       SayHi();
 
       Console.WriteLine();
@@ -491,7 +491,7 @@ namespace CSharpConsoleApp
       Console.WriteLine();
 
       Console.WriteLine(Math.Sqrt(144)); // Math is a static class. (You can't create instances of it, it will error)
-      Utility.SayHi("Slqmy");
+      Utility.SayHi("Esoteric Enderman");
 
       Console.WriteLine();
 
@@ -533,14 +533,14 @@ namespace CSharpConsoleApp
 
       Console.WriteLine();
 
-      Book slimeBotDocs = new Book("Slime Bot Documentation", "Slqmy", 304, "The Slimy Swamp");
+      Book slimeBotDocs = new Book("Slime Bot Documentation", "Esoteric Enderman", 304, "The Slimy Swamp");
       Console.WriteLine(slimeBotDocs);
       Console.WriteLine(slimeBotDocs.title);
       Console.WriteLine(slimeBotDocs.authorName);
       Console.WriteLine(slimeBotDocs.pageCount);
       Console.WriteLine(slimeBotDocs.genre);
 
-      Book tssHistory = new Book("The History of The Slimy Swamp, I guess", "Slqmy", 6030, "The Slimy Swamp");
+      Book tssHistory = new Book("The History of The Slimy Swamp, I guess", "Esoteric Enderman", 6030, "The Slimy Swamp");
       Console.WriteLine(tssHistory);
       Console.WriteLine(tssHistory.title);
       Console.WriteLine(tssHistory.authorName);
