@@ -452,23 +452,23 @@ namespace CSharpConsoleApp
 
       Console.WriteLine();
 
-      Student Jim = new Student("Jim", "Business", 2.8);
-      Student Pam = new Student("Pam", "Art", 3.6);
+      Student Jim = new("Jim", "Business", 2.8);
+      Student Pam = new("Pam", "Art", 3.6);
 
       Console.WriteLine(Jim.HasHonours());
       Console.WriteLine(Pam.HasHonours());
 
       Console.WriteLine();
 
-      Rating movie1Rating = new Rating(4.6, 7203);
-      Movie movie1 = new Movie("The Avengers", "Joss Whedon", movie1Rating, MovieAgeRating.PG_13);
+      Rating movie1Rating = new(4.6, 7203);
+      Movie movie1 = new("The Avengers", "Joss Whedon", movie1Rating, MovieAgeRating.PG_13);
 
       // movie1.AgeRating = "a"; will error.
 
       Console.WriteLine(movie1);
 
-      Rating movie2Rating = new Rating(4.4, 8905);
-      Movie movie2 = new Movie("Shrek", "Adam Adamson", movie2Rating, MovieAgeRating.PG);
+      Rating movie2Rating = new(4.4, 8905);
+      Movie movie2 = new("Shrek", "Adam Adamson", movie2Rating, MovieAgeRating.PG);
 
       Console.WriteLine(movie2);
 
@@ -476,8 +476,8 @@ namespace CSharpConsoleApp
 
       Console.WriteLine(Song.SongCount); // You can't use "Song.title" because it belongs to instances of the class, not the class itself.
 
-      Song holiday = new Song("Holiday", ["Green Day"], 200);
-      Song kashmir = new Song("Kashmir", ["Led Zeppelin"], 150);
+      Song holiday = new("Holiday", ["Green Day"], 200);
+      Song kashmir = new("Kashmir", ["Led Zeppelin"], 150);
 
       Console.WriteLine(holiday.title);
       Console.WriteLine(kashmir.title); // Can't do "Kasmir.songCount".
@@ -494,7 +494,7 @@ namespace CSharpConsoleApp
       Chef chef = new Chef(); // Super class.
       chef.MakeChicken();
 
-      ItalianChef italianChef = new ItalianChef(); // Sub-class.
+      ItalianChef italianChef = new(); // Sub-class.
       italianChef.MakeChicken();
 
       italianChef.MakePizza();
@@ -529,14 +529,14 @@ namespace CSharpConsoleApp
 
       Console.WriteLine();
 
-      Book slimeBotDocs = new Book("Slime Bot Documentation", "Esoteric Enderman", 304, "The Slimy Swamp");
+      Book slimeBotDocs = new("Slime Bot Documentation", "Esoteric Enderman", 304, "The Slimy Swamp");
       Console.WriteLine(slimeBotDocs);
       Console.WriteLine(slimeBotDocs.title);
       Console.WriteLine(slimeBotDocs.authorName);
       Console.WriteLine(slimeBotDocs.pageCount);
       Console.WriteLine(slimeBotDocs.genre);
 
-      Book tssHistory = new Book("The History of The Slimy Swamp, I guess", "Esoteric Enderman", 6030, "The Slimy Swamp");
+      Book tssHistory = new("The History of The Slimy Swamp, I guess", "Esoteric Enderman", 6030, "The Slimy Swamp");
       Console.WriteLine(tssHistory);
       Console.WriteLine(tssHistory.title);
       Console.WriteLine(tssHistory.authorName);
